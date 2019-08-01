@@ -1,0 +1,20 @@
+.font-family(@family){
+    font-family: @family;
+}
+.font-style(@style){
+    font-style: @style;
+}
+.font-weight(@weight){
+    font-weight: @weight;
+}
+.font-size(@size){
+    font-size: @size;
+}
+.font-color(@color){
+    color: @color;
+}
+
+.font-setup(@family,@variant, @strong: "normal", @style: "normal", @size, @color:white){
+    font: @style @variant @strong @size @family;
+    color: @color;
+}

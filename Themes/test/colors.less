@@ -1,0 +1,55 @@
+
+//default colors for all
+@ThemeColor: #395175;
+@FontColor: contrast(@ThemeColor);
+@LightColor : lighten(@ThemeColor, 40%); 
+@DarkenColor : darken(@ThemeColor, 5%);
+@TealColor: #829fc7;
+@AlphaColor: fade(@ThemeColor, 40%);
+@BorderColor:  darken(@ThemeColor, 30%);
+@ThemeOpositColor: #f5ce9b;
+@ShadowColor: #496286;
+//Disabled
+@DisabledColor: #e8eaea;
+@DisabledFontColor: #909090;
+
+//Boxes colors
+//default
+@DefaultBoxBackColor: @ThemeColor;
+@DefaultFontBoxColor: @FontColor;
+//first alt ---- header column
+@FirstBoxBackColor: @LightColor;
+@FirstFontBoxColor: contrast(@LightColor);
+//second alt --- body column 
+@SecondBoxBackColor: @TealColor;// desaturate(@LightColor, 10%);
+@SecondFontBoxColor: contrast(@TealColor); //contrast(desaturate(@LightColor, 10%));
+//third alt ---- buttons
+@ThirdBoxBackColor:  @DarkenColor;
+@ThirdFontBoxColor: @FontColor;
+
+//EMPASIZE pallete colors
+//alert
+@AlertBackColor: #ec4141;
+@AlertColor:#d7532a;
+//warning
+@WarningBackColor: #edf49c;
+@WarningColor: #dbe56b;
+//info
+@InfoBackColor: #607da5;
+@InfoColor: @ThemeOpositColor;
+//success
+@SuccessBackColor: #9cf49d;
+@SuccessColor: #82C582;
+
+// Label Colors
+@Grey:      #9e9d9f;
+@Brown:     #5d230d;
+@Orange:    #f57d22;
+@Yellow:    #dcab28;
+@DarkYellow:#979e1a;
+@Green:     #176331;
+@LightBlue: #5fb0e6;
+@Blue:      #193c65;
+@Purple:    #611874;
+@Red:       #bb2f2d;
+@white:     #eef0f3;

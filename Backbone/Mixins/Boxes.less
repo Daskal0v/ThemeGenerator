@@ -1,0 +1,23 @@
+.box-colorfull(@backgroundColor, @fontColor, @borderColor){
+    .bg-color(@backgroundColor);
+    color: @fontColor;
+    border-color: @borderColor;
+}
+
+.box-disabled(){
+    -webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;	
+    background: unset;
+    background-color: @DisabledColor;
+    color: @DisabledFontColor;
+    border-color: @DisabledFontColor;
+}
+
+.box-full(@backgroundColor, @borderColor, @fontColor, @padding, @margin, @x, @y, @blur, @r, @g, @b, @alpha){
+    .box-colorfull(@backgroundColor, @fontColor, @borderColor);
+    .padding-all(@padding);
+    .margin-all(@margin);
+    .box-shadow-custom-color(@x, @y, @blur, @r, @g, @b, @alpha);
+}
+

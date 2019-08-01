@@ -1,0 +1,70 @@
+.bg-color(@color){
+    background: @color;
+}
+
+.bg(@background){
+    background: @background;
+}
+
+.flex(@justify-content, @direction){
+    display: flex;
+    justify-content: @justify-content;
+    flex-flow: @direction;
+}
+
+.opacity(@opacity: 0.5) {
+	-webkit-opacity: 	@opacity;
+	-moz-opacity: 		@opacity;
+	opacity: 		@opacity;
+}
+
+.gradient(@origin: left, @start: #ffffff, @stop: #000000) {
+    background-color: @start;
+    background-image: -webkit-linear-gradient(@origin, @start, @stop);
+    background-image: -moz-linear-gradient(@origin, @start, @stop);
+    background-image: -o-linear-gradient(@origin, @start, @stop);
+    background-image: -ms-linear-gradient(@origin, @start, @stop);
+    background-image: linear-gradient(@origin, @start, @stop);
+}
+
+.quick-gradient(@origin: left, @alpha: 0.2) {
+    background-image: -webkit-linear-gradient(@origin, rgba(0,0,0,0.0), rgba(0,0,0,@alpha));
+    background-image: -moz-linear-gradient(@origin, rgba(0,0,0,0.0), rgba(0,0,0,@alpha));
+    background-image: -o-linear-gradient(@origin, rgba(0,0,0,0.0), rgba(0,0,0,@alpha));
+    background-image: -ms-linear-gradient(@origin, rgba(0,0,0,0.0), rgba(0,0,0,@alpha));
+    background-image: linear-gradient(@origin, rgba(0,0,0,0.0), rgba(0,0,0,@alpha));
+}
+
+.reflect(@length: 50%, @opacity: 0.2){
+    -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(@length, transparent), to(rgba(255,255,255,@opacity)));
+}
+
+.content-columns(@width, @count, @gap) {
+    -webkit-column-width:   @width;
+    -moz-column-width:      @width;
+    column-width:           @width;
+    -webkit-column-count:   @count;
+    -moz-column-count:      @count;
+    column-count:           @count;
+    -webkit-column-gap:     @gap;
+    -moz-column-gap:        @gap;
+    column-gap:             @gap;     
+}
+
+//auto | text | none | contain | all
+.user-select(@value){
+    -webkit-user-select: @value;  
+    -moz-user-select:    @value;     
+    -ms-user-select:     @value;     
+    user-select:         @value;  
+}
+
+.word-break(){
+    -ms-word-break: break-all;
+    word-break:     break-all;
+    /* Non standard for WebKit */
+    word-break: break-word;
+    -webkit-hyphens: auto;
+    -moz-hyphens:    auto;
+    hyphens:         auto;
+}

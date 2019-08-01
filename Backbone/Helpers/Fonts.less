@@ -1,0 +1,46 @@
+.theme-font-emphasized{
+    .font-style(~"italic");
+}
+
+.theme-font-strong{
+    .font-weight(~"bold");
+}
+
+.theme-font-default{
+    .font-setup(@fontFamilyTypeOne, "normal", "normal", "normal", @fontSizeNormal, @FontColor);
+}
+
+.theme-fsize-tiny{
+    .font-size(@fontSizeTiny);
+}
+
+.theme-fsize-small{
+    .font-size(@fontSizeSmall);
+}
+
+.theme-fsize-normal{
+    .font-size(@fontSizeNormal);
+}
+
+.theme-fsize-large{
+    .font-size(@fontSizeLarge);
+    @media @break1{
+      .font-size(@fontSizeNormal);
+    }
+}
+
+.theme-fsize-huge{
+    .font-size(@fontSizeHuge);
+}
+
+.theme-ffamily-first{
+    .font-family(@fontFamilyTypeOne);
+}
+
+.theme-ffamily-second{
+    .font-family(@fontFamilyTypeTwo);
+}
+
+.theme-ffamily-third{
+    .font-family(@fontFamilyTypeThree);
+}
